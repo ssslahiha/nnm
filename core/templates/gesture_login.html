@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تسجيل دخول القائد ✌️</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark text-white text-center">
+
+<div class="container mt-5">
+
+    <h2 class="mb-4">تسجيل دخول القائد عبر حركة اليد ✌️</h2>
+
+    <p class="text-info">ارفع إصبعي السبابة والوسطى (علامة النصر) أمام الكاميرا</p>
+
+    <!-- صندوق الكاميرا -->
+    <div class="camera-box mb-4">
+        <video id="camera" autoplay playsinline width="350" height="260"></video>
+    </div>
+
+    <!-- الكانفس لالتقاط الصور -->
+    <canvas id="snapshot" width="350" height="260" class="d-none"></canvas>
+
+    <p id="status" class="mt-3 text-warning">جاري تحليل حركة اليد...</p>
+
+</div>
+
+<script src="{% static 'js/gesture.js' %}"></script>
+
+</body>
+</html>

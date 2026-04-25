@@ -1,0 +1,22 @@
+body {
+    font-family: "Tajawal", sans-serif;
+}
+
+.btn-lg {
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+#message-box {
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.camera-box {
+    width: 350px;
+    height: 260px;
+    border: 3px solid #0d6efd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
